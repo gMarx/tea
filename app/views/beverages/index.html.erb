@@ -1,0 +1,12 @@
+<h1>Beverages</h1>
+<p>Where you can view all the drinks we serve!</p>
+
+<%= @beverages.each do |bev| %>
+  <div class="media">
+    <div class="media-body">
+      <h4 class="media-heading">
+        <%= link_to bev.drink, bev %>
+      </h4>
+    </div>
+  </div>
+<% end %>
