@@ -4,7 +4,7 @@ class BeveragesController < ApplicationController
   end
 
   def show
-    # @beverage = Beverage.find(params[:id])
+    @beverage = Beverage.find(params[:id])
   end
 
   def new
